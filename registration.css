@@ -1,0 +1,44 @@
+*{
+    font-family:sans-serif;
+}
+
+
+tbody label{
+    padding-right: 100px;
+}
+
+input{
+    padding: 10px 10px;
+    border:solid 2px black;
+}
+
+label{
+    font-weight: bold;
+}
+
+td {
+    height: 20px; 
+    padding: 10px; 
+}
+
+
+table {
+    border: 2px solid #000; 
+    border-collapse: collapse;
+}
+
+input[type="submit"],input[type="reset"]{
+    background-color:rgb(96, 124, 251);
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    font-size: 1rem;
+    padding: 10px 60px;
+}
+
+form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}

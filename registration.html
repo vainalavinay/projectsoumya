@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="registration.css">
+</head>
+<body>
+    <form onsubmit="submitHandler()" action="" method="">
+        <table>
+            <thead>
+                <tr>
+                    <th colspan="2" style="padding: 10px 10px 20px 10px;">User Registration <hr></th>
+                </tr>
+            </thead>
+            <tbody">
+                <tr>
+                    <td><label for="username">User Name</label></td>
+                    <td><input type="text" id="username" name="username" placeholder="Enter your username."></td>
+                </tr>
+                <tr>
+                    <td><label for="password">Password</label></td>
+                    <td><input type="password" id="password" name="password" placeholder="Enter your password."></td>
+                </tr>
+                <tr>
+                    <td><label>Country</label></td>
+                    <td>
+                        <input type="radio" id="india" name="country" value="India">
+                        <label for="india">India</label>
+                        
+                        <input type="radio" id="china" name="country" value="China">
+                        <label for="china">China</label>
+                        
+                        <input type="radio" id="uk" name="country" value="UK">
+                        <label for="uk">UK</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2"><input type="checkbox" id="acknowledgement" name="acknowledgement" value="yes">
+                        <label for="acknowledgement">Check this to receive an acknowledgement.</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="padding-left: 15%; padding-top: 30px; padding-bottom: 30px;"> <input type="submit" value="Login"></td>
+                    <td style="padding-left: 20%; padding-top: 30px; padding-bottom: 30px;"><input type="reset" value="Reset"></td>
+                </tr>
+            </tbody>
+        </table>
+    </form>
+    
+</body>
+<script src="registration.js"></script>
+</html>
