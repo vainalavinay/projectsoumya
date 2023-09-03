@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Registration</title>
+    <style>
+        *{
+            font-family: sans-serif;
+        }
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        input[type="text"],input[type="password"]{
+            border: none;
+            width: 200px;
+        }
+        input[type="submit"],input[type="reset"]{
+            padding: 10px 40px;
+            background:linear-gradient(180deg, #a4d1f9, #027ae3);
+            border-radius: 5px;
+            box-shadow: rgb(178, 178, 178) 1px 1px 1px;
+            outline: none;
+            margin-left: 50px;
+        }
+        
+        td{
+            padding: 10px 40px;
+        }
+
+        table{
+            border:solid 2px black;
+        }
+        
+    </style>
+</head>
+<body>
+    <form onsubmit="submitHandler(event)" action="">
+        <table border="1" style="border-collapse: collapse;">
+            <h3 style="align-items: center; justify-content: center; display: flex;">User Registration</h3>
+            <tr><td>User Name</td>
+                <td><input type="text" id="username" placeholder="Click or tap here to enter text."></td></tr>
+            <tr><td>Password</td>
+                <td><input type="password" id="password" placeholder="Click or tap here to enter text."></td></tr>
+            <tr><td>Country</td>
+            <td><input name="country" value="india" type="radio">India
+                <input name="country" value="china" type="radio">China
+                <input name="country" value="uk" type="radio">UK</td>
+            </tr>
+            <tr><td>Preferred Date</td>
+                <td><input type="text" id="preferredDate" placeholder="Click or tap here to enter text."></td></tr>
+        </table>
+        <input type="checkbox" id="checkbox" value="true">Check this to receive an acknowledgement.
+        <br><br>
+        <input type="Submit" value="Validate">
+        <input type="reset" value="Reset">
+    </form>
+</body>
+<script src="registration.js"></script>
+</html>
