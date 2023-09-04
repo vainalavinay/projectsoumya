@@ -40,6 +40,6 @@ function submitHandler(event) {
         object[key] = value;
     });
 
-    // console.log(object.id);
+    console.log(object.id);
     document.getElementById("json").innerHTML = `   Employee Management System: <br> Employee Id: ${object.id}<br>Employee Name: ${object.name}<br>Employee Salary: ${object.salary}`;
 }
