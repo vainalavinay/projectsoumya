@@ -8,11 +8,15 @@
         *{
             font-family: sans-serif;
         }
-        body{
+        .center{
+            display: flex;
+            justify-content: center;
+        }
+        .body{
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 100vh;
+            height: 60vh;
         }
         input[type="text"],input[type="password"]{
             border: none;
@@ -38,6 +42,7 @@
     </style>
 </head>
 <body>
+    <div class="body">
     <form onsubmit="submitHandler(event)" action="">
         <table border="1" style="border-collapse: collapse;">
             <h3 style="align-items: center; justify-content: center; display: flex;">User Registration</h3>
@@ -58,6 +63,8 @@
         <input type="Submit" value="Validate">
         <input type="reset" value="Reset">
     </form>
+</div>
+<div id="json" class="center"></div>
 </body>
 <script src="registration.js"></script>
 </html>

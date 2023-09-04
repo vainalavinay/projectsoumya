@@ -27,4 +27,19 @@ function submitHandler(event) {
     };
 
     console.log(formData);
+
+    var employee = "id:101, name:Rohan Kumar, salary:60000";
+    var keyValue = employee.split(",");
+    var object = {};
+    keyValue.forEach(function(pairs)
+    {
+        var parts = pairs.split(":");
+        var key = parts[0].trim();
+        var value = parts[1].trim();
+
+        object[key] = value;
+    });
+
+    // console.log(object.id);
+    document.getElementById("json").innerHTML = `   Employee Management System: <br> Employee Id: ${object.id}<br>Employee Name: ${object.name}<br>Employee Salary: ${object.salary}`;
 }
